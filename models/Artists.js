@@ -5,6 +5,7 @@ class Artists extends Model {}
 
 Artists.init(
   {
+
     id: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -34,6 +35,18 @@ Artists.init(
     underscored: true,
     modelName: 'artists',
   }
+
+
+  },
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'artists',
+  }
+  
+
 );
 
 module.exports = Artists;

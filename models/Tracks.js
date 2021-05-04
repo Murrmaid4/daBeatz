@@ -5,6 +5,7 @@ class Tracks extends Model {}
 
 Tracks.init(
     {
+
         id: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -94,6 +95,7 @@ Tracks.init(
             allowNull: false,
             unique: false,
         },
+
 
     },
     {

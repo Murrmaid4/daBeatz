@@ -2,11 +2,13 @@ const User = require('./User');
 const Tracks = require('./Tracks');
 const Artists = require('./Artists');
 
-// Gallery.hasMany(Painting, {
+
+// Tracks.hasMany(Artists, {
 //   foreignKey: 'gallery_id',
 // });
 
-// Painting.belongsTo(Gallery, {
+// Artists.belongsTo(Tracks, {
+
 //   foreignKey: 'gallery_id',
 // });
 
