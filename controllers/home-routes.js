@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const { Artists, Tracks } = require('../models');
 
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
