@@ -34,9 +34,6 @@ Artists.init(
     timestamps: false,
     underscored: true,
     modelName: 'artists',
-  }
-
-
   },
   {
     sequelize,
