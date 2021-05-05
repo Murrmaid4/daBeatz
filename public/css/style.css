@@ -60,6 +60,7 @@ header {
   padding: 4%;
 }
 
+
 /* .siteName {
   font-family: "Hachi Maru Pop", cursive;
   color: blue;
@@ -91,6 +92,7 @@ nav a:hover {
   background-color: var(--dark);
 }
 
+
 .hero {
   max-width: 100%;
   max-height: 400px;
@@ -103,6 +105,7 @@ nav a:hover {
   height: auto;
 }
 
+
 .btn-no-style {
   background: none;
   border: none;
@@ -114,14 +117,4 @@ nav a:hover {
   margin-left: 16px;
 }
 
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
-}
 
-footer {
-  font-size: smaller;
-  text-align: center;
-}
