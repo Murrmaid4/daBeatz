@@ -102,7 +102,7 @@ nav a:hover {
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 600px;
 }
 
 
@@ -117,4 +117,8 @@ nav a:hover {
   margin-left: 16px;
 }
 
-
+footer{
+  background-color: black;
+  width: 200px;
+  color: white;
+}
