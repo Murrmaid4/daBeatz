@@ -34,12 +34,13 @@ const hbs = exphbs.create({ helpers });
 
 //VV this sets handlebars as the view engine for this application
 app.engine('handlebars', hbs.engine);
+
 app.set('view engine', 'handlebars');
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'public')));
 
 app.use(routes);
 //^^ needed to USE routes
