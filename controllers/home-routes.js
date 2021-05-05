@@ -1,23 +1,18 @@
 const router = require('express').Router();
 const { Artists, Tracks } = require('../models');
 
-// GET all galleries for homepage
+// GET all for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
-      include: [
-        {
-          model: Painting,
-          attributes: ['filename', 'description'],
-        },
-      ],
+    const dbTrackData = await Tracks.findAll({
+    
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const tracks = dbTrackData.map((tracks) =>
+      tracks.get({ plain: true })
     );
     res.render('homepage', {
-      galleries,
+      tracks,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {

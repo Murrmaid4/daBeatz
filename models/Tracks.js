@@ -37,6 +37,7 @@ Tracks.init(
         id_artists: {
             type: DataTypes.STRING,
             allowNull: false,
+            
         },
         release_date: {
             type: DataTypes.STRING,
@@ -95,6 +96,8 @@ Tracks.init(
             allowNull: false,
             unique: false,
         },
+        
+       
 
 
     },

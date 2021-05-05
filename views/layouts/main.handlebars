@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>Da Beatz.</title>
+  <link rel="stylesheet" type="text/css" href="/daBeatz/public/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/daBeatz/public/css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+    <h1>Da Beatz</h1>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -21,12 +21,15 @@
     <a href="/login">Login</a>
     {{/if}}
   </nav>
+  <div class="hero">
+    <img src="/daBeatz/public/images/hero-img.jpg" alt="neon sign"/>
+  </div>
   <main>
     <aside>
       <h2>Enjoy the galleries!</h2>
     </aside>
     <div class="gallery">
-      {{{body}}}
+      {{!-- {{{body}}} --}}
     </div>
   </main>
   {{#if loggedIn}}
