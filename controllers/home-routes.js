@@ -20,6 +20,8 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 
+
+
 });
 
 // GET one gallery
@@ -68,7 +70,9 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
+ else{
   res.render('login');
+ }
 });
 
 module.exports = router;
