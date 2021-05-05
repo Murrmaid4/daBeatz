@@ -28,18 +28,16 @@
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <a href="/js/login">Login</a>
+    <a href="/login">Login</a>
     {{/if}}
   </nav>
   <div class="hero">
     <img src="/images/hero-img.jpg" alt="neon sign"/>
   </div>
   <main>
-    {{!-- <aside>
-      <h2>Enjoy the galleries!</h2>
-    </aside> --}}
-    <div class="gallery">
-      {{!-- {{{body}}} --}}
+    
+    <div class="dataBody">
+      {{{body}}}
     </div>
   </main>
   {{#if loggedIn}}
