@@ -35,6 +35,12 @@ header {
   color: var(--light);
 }
 
+header h1{
+  font-family: 'Hachi Maru Pop', cursive;
+  color: #B2F7FE;
+  font-size: 64px;
+  /* color can change this is just placeholder */
+}
 main {
   display: flex;
   flex-wrap: wrap;
