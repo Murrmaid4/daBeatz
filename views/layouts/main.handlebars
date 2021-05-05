@@ -4,34 +4,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
+  <title>Da Beatz.</title>
+
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+    {{!-- <h1 class="siteName">Da Beatz.</h1> --}}
+  <img class="siteNamePic" src="/images/DaBeatzTitle.png" alt="Da Beatz">
+
   </header>
   <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+    <a href="/js/login">Login</a>
     {{/if}}
   </nav>
+  <div class="hero">
+    <img src="/images/hero-img.jpg" alt="neon sign"/>
+  </div>
   <main>
-    <aside>
+    {{!-- <aside>
       <h2>Enjoy the galleries!</h2>
-    </aside>
+    </aside> --}}
     <div class="gallery">
-      {{{body}}}
+      {{!-- {{{body}}} --}}
     </div>
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+  <footer>Made by The_Beatlz</footer>
 </body>
 
 </html>

@@ -6,6 +6,34 @@ class Artists extends Model {}
 Artists.init(
   {
 
+    id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      primaryKey: true,
+    },
+    followers: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    genres: {
+      type: DataTypes.STRING(500),
+      allowNull: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    popularity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    freezeTableName: true,
+    timestamps: false,
+    underscored: true,
+    modelName: 'artists',
   },
   {
     sequelize,
@@ -15,6 +43,7 @@ Artists.init(
     modelName: 'artists',
   }
   
+
 );
 
 module.exports = Artists;
