@@ -109,7 +109,7 @@ a:visited {
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 600px;
 }
 
 .btn-no-style {
@@ -123,6 +123,7 @@ a:visited {
   margin-left: 16px;
 }
 
+
 .container {
   display: flex;
   flex-flow: column wrap;
@@ -133,4 +134,8 @@ a:visited {
 footer {
   font-size: smaller;
   text-align: center;
+  background-color: black;
+  width: 200px;
+  color: white;
+
 }
