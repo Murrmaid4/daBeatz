@@ -9,15 +9,15 @@
   --border-radius: 0.3rem;
   --gradient: linear-gradient(
     45deg,
-    rgb(0,0,0),
-    rgb(0,0,0),
-    rgb(10,10,10),
-    rgb(20,20,20),
-    rgb(30,30,30),
-    rgb(40,40,40),
-    rgb(50,50,50),
-    rgb(60,60,60),
-    rgb(70,70,70)
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(10, 10, 10),
+    rgb(20, 20, 20),
+    rgb(30, 30, 30),
+    rgb(40, 40, 40),
+    rgb(50, 50, 50),
+    rgb(60, 60, 60),
+    rgb(70, 70, 70)
   );
 }
 
@@ -34,20 +34,29 @@ body {
 }
 
 @keyframes bg-animation {
-  0% {background-position: left;}
-  100% {background-position: right;}
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 header {
   padding: 20px;
   text-align: center;
+  background-image: url(https://wallpaperaccess.com/full/1858113.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   
 }
 
 .siteNamePic {
-  width: 90%;
+  width: 40%;
   height: auto;
-  padding: 4%;
+  padding: 0%;
+  margin: 0%;
+  border: 0%;
 }
 
 /* .siteName {
@@ -66,9 +75,23 @@ main {
 nav {
   display: flex;
 
-  background-image: linear-gradient(black, rgb(0,255,123), rgb(10,10,10), rgb(7,7,7), rgb(5,5,5),rgb(2,2,2), black, black,rgb(2,2,2), rgb(5,5,5), rgb(7,7,7), rgb(10,10,10),  rgb(0,255,123), black);
-  border-top: 3px 
-
+  background-image: linear-gradient(
+    black,
+    rgb(0, 255, 123),
+    rgb(10, 10, 10),
+    rgb(7, 7, 7),
+    rgb(5, 5, 5),
+    rgb(2, 2, 2),
+    black,
+    black,
+    rgb(2, 2, 2),
+    rgb(5, 5, 5),
+    rgb(7, 7, 7),
+    rgb(10, 10, 10),
+    rgb(0, 255, 123),
+    black
+  );
+  border-top: 3px;
 }
 
 nav a {
@@ -83,7 +106,6 @@ nav a:hover {
   color: var(--secondary);
   background-color: var(--dark);
   transition: 1s;
-  
 }
 
 .loginout {
@@ -123,7 +145,6 @@ a:visited {
   margin-left: 16px;
 }
 
-
 .container {
   display: flex;
   flex-flow: column wrap;
@@ -137,5 +158,4 @@ footer {
   background-color: black;
   width: 200px;
   color: white;
-
 }
