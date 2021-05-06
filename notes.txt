@@ -1,0 +1,11 @@
+{{!-- {{#each galleries as |gallery|}}
+{{!-- have this go through tracks --}}
+{{> gallery-details}} 
+{{!-- in gallerydetails repurpose for card details for Top 5 songs --}}
+{{/each}} --}}
+
+{{!-- additional for artists --}}
+{{!-- cards for Top 5 artists --}}
+{{!-- for loop for top5 by popularity --}}
+
+handlebar notes
