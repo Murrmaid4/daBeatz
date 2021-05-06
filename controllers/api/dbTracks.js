@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Tracks } = require('../../models');
-const { Op } = require('sequelize');
 
 
 router.get('/', async (req, res) => {
@@ -36,6 +35,7 @@ router.get('/song/:name', async (req, res) => {
 
 
 router.get('/artist/:artists', async (req, res) => {
+    console.log(req.params.artist)
     try {
         const artistData = await Tracks.findAll({ 
             where: {
@@ -49,11 +49,12 @@ router.get('/artist/:artists', async (req, res) => {
         artist.get({ plain: true })
       );
 
-        if (!artistData) {
+        if (!artist) {
             res.status(404).json({ message: 'Cannot find that artist!'});
             return;
         }
-        res.status(200).json(artist);
+
+        res.render('userpage', {artist})
     } catch (err) {
         res.status(500).json(err)
     }
