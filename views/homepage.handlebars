@@ -1,13 +1,4 @@
-{{#each users as |user| }}
-<div class="row align-left mb-5">
-  <div class="col-md-6">
-    <h2>{{{logo}}} {{user.name}}</h2>
-     
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.playlist}}">{{user.playlist}}</a></h3>
-  </div>
-</div>
+{{#each artist as |artist|}}
+{{< homepage-card-details }}
 {{/each}}
-
 
