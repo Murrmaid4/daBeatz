@@ -16,22 +16,22 @@
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-
     {{!-- <h1 class="siteName">Da Beatz.</h1> --}}
   <img class="siteNamePic" src="/images/DaBeatzTitle.png" alt="Da Beatz">
 
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="/"><i class="fas fa-home" style="font-size: 20px; color:white"></i></a>
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="logout" class="loginout" style="font-size: 20px;"><i class="fas fa-sign-out-alt"></i></button>
     {{else}}
-    <a href="/js/login">Login</a>
+    <a href="/js/login" class="loginout" style="font-size: 20px; color:white"><i class="fas fa-sign-in-alt"></i></a>
     {{/if}}
   </nav>
   <div class="hero">
