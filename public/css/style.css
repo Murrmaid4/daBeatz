@@ -10,15 +10,14 @@
   --gradient: linear-gradient(
     45deg,
     rgb(0,0,0),
+    rgb(0,0,0),
     rgb(10,10,10),
     rgb(20,20,20),
     rgb(30,30,30),
     rgb(40,40,40),
     rgb(50,50,50),
     rgb(60,60,60),
-    rgb(70,70,70),
-    rgb(90,90,90),
-    rgb(100,100,100)
+    rgb(70,70,70)
   );
 }
 
@@ -31,21 +30,12 @@ body {
   justify-content: flex-start;
   background-image: var(--gradient);
   background-size: 400%;
-  animation: bg-animation 20s infinite alternate;
+  animation: bg-animation 30s infinite alternate;
 }
 
 @keyframes bg-animation {
   0% {background-position: left;}
   100% {background-position: right;}
-}
-
-a {
-  color: var(--dark);
-  text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
 }
 
 header {
@@ -59,7 +49,6 @@ header {
   height: auto;
   padding: 4%;
 }
-
 
 /* .siteName {
   font-family: "Hachi Maru Pop", cursive;
@@ -76,7 +65,10 @@ main {
 
 nav {
   display: flex;
-  background-color: var(--secondary);
+
+  background-image: linear-gradient(black, rgb(0,255,123), rgb(10,10,10), rgb(7,7,7), rgb(5,5,5),rgb(2,2,2), black, black,rgb(2,2,2), rgb(5,5,5), rgb(7,7,7), rgb(10,10,10),  rgb(0,255,123), black);
+  border-top: 3px 
+
 }
 
 nav a {
@@ -90,8 +82,23 @@ nav a {
 nav a:hover {
   color: var(--secondary);
   background-color: var(--dark);
+  transition: 1s;
+  
 }
 
+.loginout {
+  position: absolute;
+  left: 85%;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
 
 .hero {
   max-width: 100%;
@@ -102,9 +109,8 @@ nav a:hover {
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 600px;
 }
-
 
 .btn-no-style {
   background: none;
@@ -118,3 +124,18 @@ nav a:hover {
 }
 
 
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: center;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+  background-color: black;
+  width: 200px;
+  color: white;
+
+}
