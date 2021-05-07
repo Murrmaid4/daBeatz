@@ -111,9 +111,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: inherit;
-}
+} */
 
 .hero {
   max-width: 100%;
@@ -146,9 +146,19 @@ a:visited {
 }
 
 footer {
-  font-size: smaller;
-  text-align: center;
-  background-color: black;
-  width: 200px;
-  color: white;
+  background-color:#282828;
+    color:white;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-align:center;
+    height:150px;
+}
+
+footer p {
+  position: relative;
+  top: 75px;
+  color:white;
+  font-family: 'Righteous', cursive;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
