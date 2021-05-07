@@ -1,4 +1,10 @@
 <section class="card">
-      <p>{{name}}</p>
-      <p>{{genres}}</p>
+  <a href="/painting/{{id}}">
+    <header>{{title}}</header>
+
+    <div class="card-body">
+      <img src="/images/{{filename}}" alt="{{description}}">
+      <p>By: {{artist}}</p>
+    </div>
+  </a>
 </section>

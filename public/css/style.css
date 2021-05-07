@@ -38,7 +38,6 @@ header {
   background-image: url(https://wallpaperaccess.com/full/1858113.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  
 }
 
 .siteNamePic {
@@ -51,12 +50,6 @@ header {
   max-width: 300px;
 }
 
-/* .siteName {
-  font-family: "Hachi Maru Pop", cursive;
-  color: blue;
-  font-size: 48px;
-  text-shadow: 1 1 3 white;
-} */
 
 main {
   display: flex;
@@ -104,18 +97,8 @@ nav a {
 nav a:hover {
   color: var(--secondary);
   background-color: var(--dark);
-  height: 50%;
   transition: 1s;
 }
-
-a {
-  color: var(--dark);
-  text-decoration: none;
-}
-
-/* a:visited {
-  color: inherit;
-} */
 
 .hero {
   max-width: 100%;
@@ -150,7 +133,6 @@ a {
 h1 {
   color: white;
   padding: 5%;
-
 }
 section.card {
   color: white;
@@ -158,6 +140,7 @@ section.card {
   padding: 5%;
   display: block;
   flex: wrap;
+  
 }
 
 #loginPage {
@@ -178,18 +161,23 @@ section.card {
   font-size: 35px;
 }
 
+#logout {
+  background-color: transparent;
+  border: transparent;
+}
+
 footer {
-  background-color:#282828;
-    color:white;
-    font-family: 'Righteous', cursive;
-    letter-spacing: 2px;
-    text-align:center;
+  background-color: #282828;
+  color: white;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 footer p {
   position: relative;
-  color:white;
-  font-family: 'Righteous', cursive;
+  color: white;
+  font-family: "Righteous", cursive;
   font-size: 18px;
   letter-spacing: 2px;
 }
