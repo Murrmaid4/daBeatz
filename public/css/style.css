@@ -145,6 +145,19 @@ a {
   align-items: center;
 }
 
+h1 {
+  color: white;
+  padding: 5%;
+
+}
+section.card {
+  color: white;
+  background: black;
+  padding: 5%;
+  display: block;
+  flex: wrap;
+}
+
 footer {
   background-color:#282828;
     color:white;
