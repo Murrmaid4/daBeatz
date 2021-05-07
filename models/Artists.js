@@ -30,13 +30,6 @@ Artists.init(
   },
   {
     sequelize,
-    freezeTableName: true,
-    timestamps: false,
-    underscored: true,
-    modelName: 'artists',
-  },
-  {
-    sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

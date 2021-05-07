@@ -16,9 +16,14 @@ router.get('/', async (req, res) => {
 router.get('/song/:name', async (req, res) => {
     
     try {
-        const trackData = await Tracks.findOne({ where: {name: req.params.name }});
+        const trackData = await Tracks.findOne({ where: {
+            name: req.params.name 
+        }
+    });
         console.log(trackData)
-        const track = trackData.get({ plain: true });
+        const track = trackData.map((track) =>
+        track.get({ plain: true })
+      );
 
         
         if (!trackData) {
