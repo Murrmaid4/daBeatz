@@ -1,6 +1,14 @@
-let searchBtn = document.getElementById('submitSearch')
+let searchBtn = document.getElementById('submitSearch');
+let playlistCreate = document.getElementById('createPlaylist');
 
 console.log('dashboard js front end routes ready')
+
+playlistCreate.onclick = function() {
+  // code to dynamically create a card inside of the playlistCard div
+}
+
+
+
 
 searchBtn.onclick = function() {
     let searchInput = document.getElementById('songSearchBox').value
