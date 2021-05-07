@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
 
     const tracks = dbTrackData.map((tracks) =>
       tracks.get({ plain: true })
+      
     );
     res.render('homepage', {
       tracks,
