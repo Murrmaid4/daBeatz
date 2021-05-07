@@ -5,7 +5,7 @@ const { Artists, Tracks } = require('../models');
 router.get('/', async (req, res) => {
   try {
     const dbTrackData = await Tracks.findAll({
-    
+    limit: 5, offset: 5, order:[ ['popularity', 'desc']]
     });
 
     const tracks = dbTrackData.map((tracks) =>
@@ -36,12 +36,12 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/dashboard', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
+  if (!req.session.loggedIn) {
+    res.redirect('/login');
     return;
   }
   else {
-    res.render('userDash');
+    res.render('userDash',{loggedIn:req.session.loggedIn});
   }
 });
 

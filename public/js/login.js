@@ -10,9 +10,9 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-
+    alert (response.ok)
     if (response.ok) {
-      document.location.replace('/');
+      document.location.href='/dashboard';
     } else {
       alert('Failed to log in.');
     }
@@ -32,9 +32,9 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-
+    alert (response.ok)
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to sign up.');
     }
