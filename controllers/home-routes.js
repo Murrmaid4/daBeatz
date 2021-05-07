@@ -41,7 +41,7 @@ router.get('/dashboard', (req, res) => {
     return;
   }
   else {
-    res.render('userpage');
+    res.render('userDash');
   }
 });
 
