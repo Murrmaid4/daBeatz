@@ -1,5 +1,5 @@
 const logout = async () => {
-  alert ('test')
+  
   const response = await fetch('/api/users/logout');
 
   if (response.ok) {
