@@ -10,7 +10,7 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-    alert (response.ok)
+    
     if (response.ok) {
       document.location.href='/dashboard';
     } else {
@@ -32,7 +32,7 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-    alert (response.ok)
+    
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
