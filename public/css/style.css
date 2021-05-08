@@ -122,16 +122,29 @@ nav a:hover {
 }
 
 h1 {
-  color: white;
+  font-family: "Righteous", cursive ;
+  text-align: center;
+  color: #AAEEEE;
   padding: 5%;
+  letter-spacing: 2px;
 }
+
+.hide{
+  display: none;
+}
+
 section.card {
   color: white;
   background: black;
   padding: 5%;
   display: block;
   flex: wrap;
+  border: #AAEEEE 2px solid;
   
+}
+section p{
+  font-family: "Righteous", cursive ;
+  letter-spacing: 3px;
 }
 
 #loginPage {
@@ -163,6 +176,7 @@ footer {
   font-family: "Righteous", cursive;
   letter-spacing: 2px;
   text-align: center;
+  height: 100px;
 }
 
 footer p {
@@ -171,4 +185,5 @@ footer p {
   font-family: "Righteous", cursive;
   font-size: 18px;
   letter-spacing: 2px;
+  top: 25px;
 }
