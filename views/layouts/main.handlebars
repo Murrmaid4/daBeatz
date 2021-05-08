@@ -33,16 +33,16 @@
   </header>
   <nav>
 
-    <a class="loginout" href="/dashboard" style="font-size: 20px; color: white"><i class="fas fa-bars"></i> Dashboard</a>
+    <a class="loginout logo" href="/dashboard" style="font-size: 20px; color: white"><i class="fas fa-bars "></i> Dashboard</a>
 
-    <a href="/" style="font-size: 20px; color:white"><i class="fas fa-home" style="font-size: 20px; color:white"></i> Home</a>
+    <a href="/" style="font-size: 20px; color:white" class="logo"><i class="fas fa-home" style="font-size: 20px; color:white"></i> Home</a>
 
     {{#if loggedIn}}
-    <button id="logout" class="loginout" style="font-size: 20px; color:white"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    <button id="logout" class="loginout logo" style="font-size: 20px; color:white"><i class="fas fa-sign-out-alt"></i> Logout</button>
     {{else}}
 
 
-    <a href="/login" class="loginout" style="font-size: 20px; color:white"><i class="fas fa-sign-in-alt"></i> Login</a>
+    <a href="/login" class="loginout logo" style="font-size: 20px; color:white"><i class="fas fa-sign-in-alt"></i> Login</a>
 
 
     {{/if}}

@@ -1,18 +1,12 @@
 let searchBtn = document.getElementById('submitSearch');
 let playlistCreate = document.getElementById('createPlaylist');
-let songs = document.getElementById('topFive');
-let plTitle = document.getElementById('plTitle');
-let hide = document.getElementById('hide');
-let results =document.getElementById('results')
+
 console.log('dashboard js front end routes ready')
 
-playlistCreate.onclick = function() {
-  // code to dynamically create a card inside of the playlistCard div
+// playlistCreate.onclick = function() {
+//   // code to dynamically create a card inside of the playlistCard div
 
-songs.classList.add("hide");
-plTitle.classList.remove("hide");  
-hide.classList.remove("hide");
-}
+// }
 
 
 
@@ -27,14 +21,13 @@ searchBtn.onclick = function() {
 
 const getRouteArtist = async (searchInput) => {
     console.log('get route reached')
-    let getArtist = await fetch('/api/data/artist/'+searchInput, {
+    let getArtist = await fetch('/api/data/artist/'+ searchInput, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
         },
       });
-      const artists = await getArtist.json()
-
+      const artists = getArtist.map((tracks) => tracks.get({ plain: true }));
       if (artists) {
       console.log("search successful with" + JSON.stringify(artists))
       } else {

@@ -1,0 +1,20 @@
+<div>
+    <textarea id="songSearchBox">Enter a song/artist!</textarea>
+    <button id="submitSearch">Submit</button>
+    </div>
+<div id="plTitle" > 
+  <input class="note-title" placeholder="Playlist Title"  maxlength="28" type="text">
+  <h3>Your tracks: </h3>
+  <section class="playlist ">
+
+  </section>
+</div>
+
+<div class="playlistCard">
+  <h3 class="hide" id="results">Results:</h3>
+{{#each track as |track|}}
+{{>temp-details}}
+{{/each}}
+</div>
+    
+<script src="./js/dashboard.js"></script>
