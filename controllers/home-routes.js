@@ -59,4 +59,27 @@ router.get('/dashboard', async (req, res) => {
   }
 });
 
+router.get('/playlists', async (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/login');
+    return;
+  }
+  try {
+    const dbTrackData = await Tracks.findAll({
+   
+    }); 
+
+    const tracks = dbTrackData.map((tracks) =>
+      tracks.get({ plain: true })
+      );
+  
+    res.render('playlist',{loggedIn:req.session.loggedIn, tracks
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
 module.exports = router;

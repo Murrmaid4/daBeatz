@@ -31,7 +31,7 @@ router.get('/song/:name', async (req, res) => {
             return;
         }
         console.log(track)
-        res.status(200).json(track);
+        res.render('playlist', {track})
     } catch (err) {
         res.status(500).json(err)
     }
