@@ -4,14 +4,23 @@
     <textarea id="songSearchBox">Enter a song/artist!</textarea>
     <button id="submitSearch">Submit</button>
     </div>
+
     <button id="createPlaylist">Create Playlist</button>
     {{!-- need to create JS for playlist creation to occur --}}
 
-    
+  
+<div class="hide" id="plTitle" > 
+  <input class="note-title" placeholder="Playlist Title"  maxlength="28" type="text">
+  <h3>Your tracks: </h3>
+  <section class="playlist ">
+
+  </section>
+</div>
 
 <div class="playlistCard">
-            {{!-- pull in the data from the js get request --}}
-
+  <h3 class="hide" id="results">Results:</h3>
+{{!-- pull in the data from the js get request --}}
+{{!-- {{}} --}}
 </div>
     
 

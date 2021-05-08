@@ -1,14 +1,17 @@
 let searchBtn = document.getElementById('submitSearch');
 let playlistCreate = document.getElementById('createPlaylist');
-
+let songs = document.getElementById('topFive');
+let plTitle = document.getElementById('plTitle');
+let hide = document.getElementById('hide');
+let results =document.getElementById('results')
 console.log('dashboard js front end routes ready')
 
 playlistCreate.onclick = function() {
   // code to dynamically create a card inside of the playlistCard div
-var songs = document.getElementById('topFive');
+
 songs.classList.add("hide");
-  var hide = document.getElementById('hide');
- hide.classList.remove("hide");
+plTitle.classList.remove("hide");  
+hide.classList.remove("hide");
 }
 
 
@@ -19,6 +22,7 @@ searchBtn.onclick = function() {
     console.log(searchInput)
     getRouteArtist(searchInput);
     getRouteSong(searchInput);
+  results.classList.remove("hide");
 }
 
 const getRouteArtist = async (searchInput) => {
