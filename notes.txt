@@ -1,11 +1,13 @@
-{{!-- {{#each galleries as |gallery|}}
-{{!-- have this go through tracks --}}
-{{> gallery-details}} 
-{{!-- in gallerydetails repurpose for card details for Top 5 songs --}}
-{{/each}} --}}
-
-{{!-- additional for artists --}}
-{{!-- cards for Top 5 artists --}}
-{{!-- for loop for top5 by popularity --}}
 
 handlebar notes
+
+
+
+what needs to be done 5/8/21: 
+
+getting the searched term content to show up as cards
+put add(+) icon on each card, add to playlist
+put in ability to name and rename playlists 
+add delete icon and delete function to cards 
+css for user dashboard - top 5 songs disappear when create playlist button is selected so searched cards can appear with no issue 
+the submit, textbox, and create playlist button need css 

@@ -36,13 +36,26 @@ router.get('/login', (req, res) => {
  }
 });
 
-router.get('/dashboard', (req, res) => {
+
+router.get('/dashboard', async (req, res) => {
   if (!req.session.loggedIn) {
     res.redirect('/login');
     return;
   }
-  else {
-    res.render('userDash',{loggedIn:req.session.loggedIn});
+  try {
+    const dbTrackData = await Tracks.findAll({
+    limit: 5, offset: 5, order:[ ['popularity', 'desc']]
+    }); 
+
+    const tracks = dbTrackData.map((tracks) =>
+      tracks.get({ plain: true })
+      );
+  
+    res.render('userDash',{loggedIn:req.session.loggedIn, tracks
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
 });
 

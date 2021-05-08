@@ -1,30 +1,30 @@
-<div>
-   
 
     {{!-- Search area to search db for songs --}}
-    <textarea id="songSearchBox">Enter a song!</textarea>
+    <div class="hide" id="hide">
+    <textarea id="songSearchBox">Enter a song/artist!</textarea>
     <button id="submitSearch">Submit</button>
+    </div>
     <button id="createPlaylist">Create Playlist</button>
+    {{!-- need to create JS for playlist creation to occur --}}
 
-    {{!-- card to for playlist --}}
-    <section>
-        <div class="playlistCard">
+    
+
+<div class="playlistCard">
             {{!-- pull in the data from the js get request --}}
-        </div>
-    </section>
 
-{{!-- cards for recommended songs --}}
-    <section class="recommendedCards">
-        {{!-- info about the song --}}
-            {{!-- <header>{{tracks.name}}</header>
-            <h3>{{tracks.artists}}</h3>
-            <h3>{{tracks.duration_ms}}</h3> --}}
-            {{!-- add a random album image here probably --}}
-            <img src="">
-        </a>
-    </section>
+</div>
+    
 
-{{!-- this example script to have our recommended song generator --}}
+{{!-- cards for top 5 songs --}}
+<div id="topFive">
+<h1> Top 5 Songs </h1>
+{{#each tracks as |track|}}
+{{>homepage-card-details}}
+{{/each}}
+</div>
+   
+
+{{!-- this example script for search function --}}
 <script src="./js/dashboard.js"></script>
 
 

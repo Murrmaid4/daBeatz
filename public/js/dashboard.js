@@ -5,6 +5,10 @@ console.log('dashboard js front end routes ready')
 
 playlistCreate.onclick = function() {
   // code to dynamically create a card inside of the playlistCard div
+var songs = document.getElementById('topFive');
+songs.classList.add("hide");
+  var hide = document.getElementById('hide');
+ hide.classList.remove("hide");
 }
 
 
