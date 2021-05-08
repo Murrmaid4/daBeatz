@@ -59,7 +59,7 @@ router.get('/artist/:artists', async (req, res) => {
             return;
         }
 
-        res.render('userpage', {artist})
+        res.render('userpage', artist)
     } catch (err) {
         res.status(500).json(err)
     }

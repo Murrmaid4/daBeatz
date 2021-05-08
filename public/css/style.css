@@ -129,6 +129,12 @@ h1 {
   letter-spacing: 2px;
 }
 
+h3 {
+  font-family:  'Berkshire Swash', cursive;
+  color: #AAEEEE;
+  letter-spacing: 1px;
+}
+
 .hide{
   display: none;
 }
