@@ -48,18 +48,19 @@ router.get('/artist/:artists', async (req, res) => {
             }
         });
         
-        console.log(artistData)  
+      
 
         const artist = artistData.map((artist) =>
         artist.get({ plain: true })
       );
+      console.log("artist",artist)
 
         if (!artist) {
             res.status(404).json({ message: 'Cannot find that artist!'});
             return;
         }
 
-        res.render('userpage', artist)
+        res.render('playlist', {artists:artist})
     } catch (err) {
         res.status(500).json(err)
     }
