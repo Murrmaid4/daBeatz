@@ -1,20 +1,32 @@
-<div>
+<div id="searchBox">
     <textarea id="songSearchBox">Enter a song/artist!</textarea>
     <button id="submitSearch">Submit</button>
     </div>
+
+<div class="playlistCard">
+  <h3 id="results">Results:</h3>
+  {{!-- here we are trying to bring in searched cards --}}
+{{#each artists as |artist|}}
+{{>search-details}}
+{{/each}}
+</div>
+
+
 <div id="plTitle" > 
-  <input class="note-title" placeholder="Playlist Title"  maxlength="28" type="text">
+  <input class="note-title" placeholder="Enter New Playlist Name"  maxlength="28" type="text">
+  <a href="" class="uk-icon-link" uk-icon="plus-circle"></a>
+  <br>
   <h3>Your tracks: </h3>
   <section class="playlist ">
-
+{{!-- this is where the cards will go once added from searched input into playlist --}}
   </section>
 </div>
 
-<div class="playlistCard">
-  <h3 class="hide" id="results">Results:</h3>
-{{#each track as |track|}}
-{{>temp-details}}
-{{/each}}
+
+
+<div class="savedPl">
+    <h3>Your Saved Playlists:</h3>
+    {{!-- will put collection of stored tracks and playlist title here like in note taker --}}
 </div>
     
 <script src="./js/dashboard.js"></script>
