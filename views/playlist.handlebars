@@ -1,7 +1,8 @@
 <div id="searchBox">
     <textarea id="songSearchBox">Enter a song/artist!</textarea>
     <br>
-    <button id="submitSearch" class="uk-button uk-button-default logo ">Submit</button>
+    <button id="submitSong" class="uk-button uk-button-default logo ">Submit Song</button>
+    <button id="submitArtist" class="uk-button uk-button-default logo ">Submit Artist</button>
     <a class="uk-button uk-button-default logo" href="/playlists">New Search</a>
     </div>
 
@@ -9,6 +10,9 @@
   <h3 id="results">Results:</h3>
   {{!-- here we are trying to bring in searched cards --}}
 {{#each artists as |artist|}}
+{{>search-details}}
+{{/each}}
+{{#each tests as |track|}}
 {{>search-details}}
 {{/each}}
 </div>
