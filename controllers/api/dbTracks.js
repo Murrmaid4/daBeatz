@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 router.get('/song/:name', async (req, res) => {
     
     try {
-        const trackData = await Tracks.findOne({ where: {
+        const trackData = await Tracks.findAll({ where: {
             name: req.params.name 
         }
     });
@@ -31,7 +31,7 @@ router.get('/song/:name', async (req, res) => {
             return;
         }
         console.log(track)
-        res.render('playlist', {track})
+        res.render('playlist', {tests:track})
     } catch (err) {
         res.status(500).json(err)
     }
