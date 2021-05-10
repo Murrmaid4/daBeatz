@@ -8,7 +8,6 @@
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --gradient: linear-gradient(55deg, #000, #000, #111, #222, #333, #444, #555);
-  min-width: 560px;
 }
 
 body {
@@ -49,7 +48,6 @@ header {
   max-height: 300px;
   max-width: 300px;
 }
-
 
 main {
   display: flex;
@@ -112,8 +110,6 @@ nav a:hover {
   height: 600px;
 }
 
-
-
 .container {
   display: flex;
   flex-flow: column wrap;
@@ -122,27 +118,27 @@ nav a:hover {
 }
 
 h1 {
-  font-family: "Righteous", cursive ;
+  font-family: "Righteous", cursive;
   text-align: center;
-  color: #AAEEEE;
+  color: #aaeeee;
   padding: 5%;
   letter-spacing: 2px;
 }
 
 h3 {
-  font-family: "Righteous", cursive ;
-  color: #AAEEEE;
+  font-family: "Righteous", cursive;
+  color: #aaeeee;
   letter-spacing: 1px;
 }
 
-.logo{
-
-    font-family: "Righteous", cursive ;
-    color: #AAEEEE;
-    letter-spacing: 1px;
+.logo {
+  font-family: "Righteous", cursive;
+  color: #aaeeee;
+  letter-spacing: 1px;
+  margin-right: 2px;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -152,15 +148,39 @@ section.card {
   padding: 5%;
   display: block;
   flex: wrap;
-  border: #AAEEEE 2px solid;
-  
+  border: #aaeeee 2px solid;
 }
-section p{
-  font-family: "Righteous", cursive ;
+section p {
+  font-family: "Righteous", cursive;
   letter-spacing: 3px;
 }
 
+#loginPage {
+  color: white;
+  text-shadow: 0 0 4 2 black;
+  min-width: 560px;
+}
 
+#songSearchBox {
+  color: white;
+  border: 1px solid #aaeeee;
+  margin-right: 4px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+#newSearch {
+  margin-bottom: 10px;
+}
+
+#submitArtist {
+  margin-bottom: 10px;
+}
+
+#submitSong {
+  margin-bottom: 10px;
+  color: white;
+}
 
 #songSearchBox:hover {
   color: white;
@@ -176,11 +196,6 @@ section p{
 #plTitle {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-#loginPage {
-  color: white;
-  text-shadow: 0 0 4 2 black;
-  min-width: 560px;
 }
 
 .login-card {
@@ -199,6 +214,14 @@ section p{
   background-color: transparent;
   border: transparent;
 }
+
+#logout:hover {
+  color: var(--secondary);
+  background-color: var(--dark);
+  transition: 1s;
+
+}  
+
 .dataBody {
   align-items: center;
   justify-content: space-between;
@@ -212,13 +235,23 @@ section p{
   margin-top: 30px;
   margin-right: 20px;
   border: 1px solid black;
-  border-radius: 10px;
+  /* border-radius: 50%; */
   background-color: #aaeeee;
   box-shadow: 0px 0px 3px 1px black;
 }
 
+#searchBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 
-
+.card {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
 footer {
   background-color: #282828;
@@ -237,3 +270,4 @@ footer p {
   letter-spacing: 2px;
   top: 25px;
 }
+
