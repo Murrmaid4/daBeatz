@@ -6,6 +6,8 @@
 
 Da Beatz is a simple and fun app that allows users to search through a spotify database by either artist or song name, then allows the user to create unique playlists from data searched (functionality on adding and deleting forthcoming) 
 
+Link to deployed Heroku app: https://da-beatz.herokuapp.com/
+
 ## Table of Contents 
 
   - [Installation](#installation)
