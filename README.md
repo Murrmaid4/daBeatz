@@ -48,7 +48,21 @@ On the homepage, users will see the current top 5 songs at this time and when se
   
 ## Technologies
 
-The tech used on this project include heroku, github, mySQL, sequelize, node.js, handlebars, HTML, CSS, Slack for meetings, UIKit, Insomnia, Dbeaver Nodemon, Bcrypt  .
+The tech used on this project include: 
+- heroku
+- github
+- mySQL 
+- sequelize
+- node.js
+- handlebars 
+- HTML 
+- CSS 
+- Slack for meetings
+- UIKit
+- Insomnia
+- Dbeaver 
+- Nodemon
+- Bcrypt  
 
 ## Contributing
  email and submit git pull request
