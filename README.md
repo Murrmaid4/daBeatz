@@ -22,12 +22,12 @@ Da Beatz is a simple and fun app that allows users to search through a spotify d
 npm i
  
 ## Usage
-Upon first use of this application, users will see the current top 5 songs at this time, when selecting the Dashboard icon for the first time, users will be taken to our login screen where they can either log in or sign up with new credentials, once logged in they're taken to their dashboard. On their dashboard is the top 5 songs again as well as a button that allows them to create a playlist. The create a playlist button takes users to our search box where they can enter a song or artist and search our database. After every search, users will need to select the new search button to search for another song or artist
+On the homepage, users will see the current top 5 songs at this time and when selecting the Dashboard icon for the first time, users will be taken to our login screen where they can either log in or sign up with new credentials. Once logged in, they're taken to their dashboard where they are again shown the top 5 songs as well as a button that allows them to create a playlist. The create a playlist button takes users to our search box where they can enter a song or artist and search our database. After every search, users will need to select the "new search" button to search for another song or artist.
  
 ## Questions
   Any questions? Feel free to contact using links below;
 
-  https://github.com/Murrmaid4, T-Heier, BluVolpe, aboomgaard 
+  https://github.com/Murrmaid4, https://github.com/T-Heier, https://github.com/BluVolpe, https://github.com/aboomgaard 
   
   Email: pritchettb14@gmail.com
   
