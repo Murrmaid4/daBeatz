@@ -52,7 +52,28 @@ The tech used on this project include heroku, github, mySQL, sequelize, node.js,
  email and submit git pull request
 
 ## Images
-later
+The homepage:
+
+![screenshot1](https://user-images.githubusercontent.com/78389456/117898834-d9444a00-b293-11eb-86b3-af7010e86d8c.jpg)
+
+The user log in/sign up page:
+
+![screenshot2](https://user-images.githubusercontent.com/78389456/117898828-d77a8680-b293-11eb-8a75-3541e9026b4f.jpg)
+
+The user dashboard: 
+
+![screenshot3](https://user-images.githubusercontent.com/78389456/117898830-d8131d00-b293-11eb-9587-c5c0d8f14a4a.jpg)
+
+The search box/playlists page:
+
+![screenshot4](https://user-images.githubusercontent.com/78389456/117898831-d8abb380-b293-11eb-83da-f699ae86d2f4.jpg)
+
+Search using artist and search by song: 
+
+![screenshot5](https://user-images.githubusercontent.com/78389456/117898832-d8abb380-b293-11eb-8f9a-2605a6dc3ea1.jpg)
+![screenshot6](https://user-images.githubusercontent.com/78389456/117898833-d9444a00-b293-11eb-94df-18cc14545511.jpg)
+
+
  
 ## Tests
  you can check routes using the Insomnia app 
